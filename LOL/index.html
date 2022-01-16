@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+body{
+    background-color: red;
+}
+
+
+.main{
+    background-color: green;
+    width: 900px;
+    height: 800px;
+    position: absolute;
+    left: 20%;
+}
+   
+.c{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    opacity: 50%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation: code1 6s 1s infinite;
+}
+
+.o{
+    height: 250px;
+    width: 250px;
+    opacity: 50%;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 550px;
+    animation: code2 6s 1s infinite;
+}
+.d{
+    height: 250px;
+    width: 250px;
+    opacity: 50%;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 550px;
+    left: 650px;
+    animation: code3 6s 1s infinite;
+}
+.e{
+    height: 250px;
+    width: 250px;
+    opacity: 50%;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 650px;
+    top: 0px;
+    animation: code4 6s 1s infinite;
+}
+
+@keyframes code1{
+    0%{left: 0px;
+    top: 0px;}
+
+    25%{left: 0px;
+    top: 550px;}
+
+    50%{top: 550px;
+    left: 650px;}
+
+    75%{left: 650px;
+    top: 0px;}
+
+    100%{left: 0px;
+    top: 0px;}
+}
+
+@keyframes code2{
+    0%{left: 0px;
+    top: 550px;}
+
+    25%{top: 550px;
+    left: 650px;}
+
+    50%{left: 650px;
+    top: 0px;}
+
+    75%{left: 0px;
+    top: 0px;}
+    
+    100%{left: 0px;
+    top: 550px;}
+}
+
+@keyframes code3{
+    0%{top: 550px;
+    left: 650px;}
+
+    25%{left: 650px;
+    top: 0px;}
+
+    50%{left: 0px;
+    top: 0px;}
+
+    75%{left: 0px;
+    top: 550px;}
+    
+    100%{top: 550px;
+    left: 650px;}
+}
+
+@keyframes code4{
+    0%{left: 650px;
+    top: 0px;}
+
+    25%{left: 0px;
+    top: 0px;}
+
+    50%{left: 0px;
+    top: 550px;}
+
+    75%{top: 550px;
+    left: 650px;}
+    
+    100%{left: 650px;
+    top: 0px;}
+}
+
+</style>
+<body>
+<div class="main">
+    <div class="c">
+        <p>C</p>
+    </div>
+    <div class="o">
+        <p>O</p>
+    </div>
+    <div class="d">
+        <p>D</p>
+    </div>
+    <div class="e">
+        <p>E</p>
+    </div>  
+</div>   
+</body>
+</html>
